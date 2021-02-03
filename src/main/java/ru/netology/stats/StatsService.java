@@ -49,7 +49,7 @@ public class StatsService {
         long averageSum = findMean(sales);
         int resultMonth = 0;
         for (long month : sales) {
-            if (month <= averageSum) {
+            if (month > averageSum) {
                 resultMonth++;
             }
         }
